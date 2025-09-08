@@ -1,0 +1,55 @@
+{
+  "name": "bornomala-script-pack",
+  "displayName": "Bornomala Script Pack",
+  "description": "Syntax highlighting and support for Bornomala Script (.bs files)",
+  "version": "1.0.0",
+  "publisher": "mahfuz0712",
+  "icon": "icons/icon.png",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "bornomalascript",
+        "aliases": [
+          "Bornomala Script",
+          "bornomalascript"
+        ],
+        "extensions": [
+          ".bs"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/bs-file-light.svg",
+          "dark": "./icons/bs-file-dark.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bornomalascript",
+        "scopeName": "source.bornomalaScript",
+        "path": "./syntaxes/bornomalascript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "bornomalascript",
+        "path": "./snippets/bornomalascript.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "echo Skipping compile step (no TypeScript)",
+    "compile": "npx vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.0",
+    "vscode": "^1.1.34"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "BornomalaScript Snippets": {
+    "kaj function": {
+      "prefix": "kaj",
+      "body": [
+        "kaj ${1:KajName}(${2:params}) {",
+        "    ${0:// ekhane code likhun}",
+        "}"
+      ],
+      "description": "Create a BornomalaScript function using 'kaj'"
+    },
+    "dhoro variable": {
+      "prefix": "dhoro",
+      "body": [
+        "dhoro ${1:variableName} = ${2:value};"
+      ],
+      "description": "variable banate 'dhoro' word ti bebohar korun"
+    },
+    "lekho print": {
+      "prefix": "lekho",
+      "body": [
+        "lekho(${1:expression});"
+      ],
+      "description": "Print output using 'lekho'"
+    },
+    "ferotDao return": {
+      "prefix": "ferotDao",
+      "body": [
+        "ferotDao ${1:value};"
+      ],
+      "description": "Return a value using 'ferotDao'"
+    },
+    "jodi if": {
+      "prefix": "jodi",
+      "body": [
+        "jodi (${1:condition}) {",
+        "    ${0:// ekhane code likhun}",
+        "}"
+      ],
+      "description": "Create an 'if' statement using 'jodi'"
+    },
+    "othoba else if": {
+      "prefix": "othoba",
+      "body": [
+        "othoba (${1:condition}) {",
+        "    ${0:// ekhane code likhun}",
+        "}"
+      ],
+      "description": "Create an 'else if' statement using 'othoba'"
+    },
+    "nahole else": {
+      "prefix": "nahole",
+      "body": [
+        "nahole {",
+        "    ${0:// ekhane code likhun}",
+        "}"
+      ],
+      "description": "Create an 'else' statement using 'nahole'"
+    },
+    "jokhon while": {
+      "prefix": "jokhon",
+      "body": [
+        "jokhon (${1:condition}) {",
+        "    ${0:// code here}",
+        "}"
+      ],
+      "description": "Create a 'while' loop using 'jokhon'"
+    },
+    "inputNao input": {
+      "prefix": "inputNao",
+      "body": [
+        "${1:variableName} = inputNao(${2:prompt});"
+      ],
+      "description": "Take input using 'inputNao'"
+    }
+  }
+}
