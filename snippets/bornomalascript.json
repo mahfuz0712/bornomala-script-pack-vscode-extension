@@ -12,21 +12,21 @@
     "dhoro variable": {
       "prefix": "dhoro",
       "body": [
-        "dhoro ${1:variableName} = ${2:value};"
+        "dhoro ${1:variableName} = ${2:value}"
       ],
       "description": "variable banate 'dhoro' word ti bebohar korun"
     },
     "lekho print": {
       "prefix": "lekho",
       "body": [
-        "lekho(${1:expression});"
+        "lekho(${1:expression})"
       ],
       "description": "Print output using 'lekho'"
     },
     "ferotDao return": {
       "prefix": "ferotDao",
       "body": [
-        "ferotDao ${1:value};"
+        "ferotDao ${1:value}"
       ],
       "description": "Return a value using 'ferotDao'"
     },
