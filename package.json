@@ -2,7 +2,7 @@
   "name": "bornomala-script-pack",
   "displayName": "Bornomala Script Pack",
   "description": "Syntax highlighting and support for Bornomala Script (.bs files)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "mahfuz0712",
   "icon": "icons/icon.png",
   "engines": {
@@ -55,8 +55,8 @@
         ],
         "configuration": "./language-configuration.json",
         "icon": {
-          "light": "./icons/bs-file-light.svg",
-          "dark": "./icons/bs-file-dark.svg"
+          "light": "./icons/BS.svg",
+          "dark": "./icons/BS.svg"
         }
       }
     ],
