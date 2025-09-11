@@ -33,7 +33,7 @@
     "jodi if": {
       "prefix": "jodi",
       "body": [
-        "jodi (${1:condition}) {",
+        "jodi (${1:condition}) tahole {",
         "    ${0:// ekhane code likhun}",
         "}"
       ],
@@ -42,7 +42,7 @@
     "othoba else if": {
       "prefix": "othoba",
       "body": [
-        "othoba (${1:condition}) {",
+        "othoba (${1:condition}) tahole {",
         "    ${0:// ekhane code likhun}",
         "}"
       ],
@@ -57,21 +57,47 @@
       ],
       "description": "Create an 'else' statement using 'nahole'"
     },
-    "jokhon while": {
+    "dekho switch": {
+      "prefix": "dekho",
+      "body": [
+        "dekho (${1:variable}) erModdhe {",
+        "    ${0:// ekhane code likhun}",
+        "}"
+      ]
+    },
+    "jokhon case": {
       "prefix": "jokhon",
       "body": [
-        "jokhon (${1:condition}) {",
-        "    ${0:// code here}",
+        "jokhon ${1:value} tokhon {",
+        "    ${0:// ekhane code likhun}",
         "}"
       ],
-      "description": "Create a 'while' loop using 'jokhon'"
+      "description": "Create a 'case'  using 'jokhon'"
     },
     "inputNao input": {
       "prefix": "inputNao",
       "body": [
-        "${1:variableName} = inputNao(${2:prompt});"
+        "inputNao(${2:prompt});"
       ],
       "description": "Take input using 'inputNao'"
+    },
+    "jotokkhon condition": {
+      "prefix": "jotokkhon",
+      "body": [
+        "jotokkhon (${1:condition}) totokkhon {",
+        "    ${0: // ekhane code likhun}",
+        "}"
+      ]
+    },
+    "object class based": {
+      "prefix": "object",
+      "body": [
+        "object (${1:ObjectName}) {",
+        "    ${1:ObjectName}(params...) {",
+        "    }",
+        "}"
+      ]
     }
+
   }
 }

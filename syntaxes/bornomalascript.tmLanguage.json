@@ -1,11 +1,23 @@
 {
-  "scopeName": "source.bornomalaScript",
-  "name": "Bornomala Script",
+  "scopeName": "source.bornomalascript",
+  "name": "BornomalaScript",
   "fileTypes": ["bs"],
   "patterns": [
     {
-      "name": "keyword.control.bornomalaScript",
-      "match": "\\b(kaj|dhoro|lekho|ferotDao|jodi|othoba|nahole|jokhon|inputNao)\\b"
+      "name": "keyword.control.bornomalascript",
+      "match": "\\b(dhoro|jodi|othoba|tahole|nahole|jokhon|tokhon|arNahole|jotokkhon|totokkhon|thamo|choluk|erModdhe|dekho|notun)\\b"
+    },
+    {
+      "name": "keyword.other.bornomalascript",
+      "match": "\\b(ferotDao|object)\\b"
+    },
+    {
+      "name": "keyword.declaration.bornomalascript",
+      "match": "\\b(kaj|lekho|inputNao)\\b"
+    },
+    {
+      "name": "variable.interpolation.bornomalaScript",
+      "match": "\\$\\{[^}]+\\}"
     },
     {
       "name": "constant.numeric.bornomalaScript",

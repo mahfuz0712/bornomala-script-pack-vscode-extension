@@ -13,6 +13,36 @@
   ],
   "main": "./extension.js",
   "contributes": {
+    "semanticTokenColors": {
+      "keyword.other.special.bornomalascript": "#569CD6",
+      "variable.interpolation.bornomalaScript": "#569CD6"
+    },
+    "configurationDefaults": {
+      "[*]": {
+        "editor.tokenColorCustomizations": {
+          "textMateRules": [
+            {
+              "scope": "keyword.control.bornomalascript",
+              "settings": {
+                "foreground": "#ff79c6"
+              } 
+            },
+            {
+              "scope": "keyword.other.bornomalascript",
+              "settings": {
+                "foreground": "#61afef"
+              }  
+            },
+            {
+              "scope": "variable.interpolation.bornomalaScript",
+              "settings": {
+                "foreground": "#61afef"
+              } 
+            }
+          ]
+        }
+      }
+    },
     "languages": [
       {
         "id": "bornomalascript",
@@ -33,7 +63,7 @@
     "grammars": [
       {
         "language": "bornomalascript",
-        "scopeName": "source.bornomalaScript",
+        "scopeName": "source.bornomalascript",
         "path": "./syntaxes/bornomalascript.tmLanguage.json"
       }
     ],
