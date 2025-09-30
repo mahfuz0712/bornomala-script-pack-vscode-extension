@@ -63,7 +63,8 @@
         "dekho (${1:variable}) erModdhe {",
         "    jokhon ${1:value} tokhon {",
         "           ${0:// ekhane code likhun}",
-        "    } arNahole {",
+        "    }",
+        "    arNahole {",
         "           ${0:// ekhane code likhun}",
         "    }",
         "}"
@@ -106,7 +107,7 @@
     "object class based": {
       "prefix": "object",
       "body": [
-        "object (${1:ObjectName}) {",
+        "object ${1:ObjectName} {",
         "    ${1:ObjectName}(params...) {",
         "    }",
         "}"
