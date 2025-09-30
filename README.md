@@ -4,7 +4,7 @@ Syntax highlighting, auto-completion, and snippets for Bornomala Script (.bs fil
 
 ## Features
 
-- Syntax highlighting for keywords like `kaj`, `dhoro`, `lekho`
+- Syntax highlighting for reserved keywords
 - Auto-closing brackets and quotes
 - Comment support (`//` and `/* */`)
 - Snippets for common keywords
