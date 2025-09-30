@@ -61,25 +61,39 @@
       "prefix": "dekho",
       "body": [
         "dekho (${1:variable}) erModdhe {",
-        "    ${0:// ekhane code likhun}",
-        "}"
-      ]
-    },
-    "jokhon case": {
-      "prefix": "jokhon",
-      "body": [
-        "jokhon ${1:value} tokhon {",
-        "    ${0:// ekhane code likhun}",
+        "    jokhon ${1:value} tokhon {",
+        "           ${0:// ekhane code likhun}",
+        "    } arNahole {",
+        "           ${0:// ekhane code likhun}",
+        "    }",
         "}"
       ],
-      "description": "Create a 'case'  using 'jokhon'"
+      "description": "Create a 'case'  using 'dekho'"
     },
     "inputNao input": {
       "prefix": "inputNao",
       "body": [
-        "inputNao(${2:prompt});"
+        "inputNao(${2:prompt})"
       ],
       "description": "Take input using 'inputNao'"
+    },
+    "etar Jonno": {
+      "prefix": "etar",
+      "body": [
+        "etar (${1:Initialization; condition; logic}) Jonno {",
+        "    //body",
+        "}"
+      ],
+      "description" : "ekta nirdisto condtition er loop"
+    },
+    "koro": {
+      "prefix": "koro",
+      "body": [
+        "koro {",
+        "    // body",
+        "} jotokkhon (${1:condition})"
+      ],
+      "description": "koro, ekbar holeo korbe"
     },
     "jotokkhon condition": {
       "prefix": "jotokkhon",
