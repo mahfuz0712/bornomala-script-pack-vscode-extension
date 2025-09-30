@@ -104,6 +104,15 @@
         "}"
       ]
     },
+    "prottek loop": {
+      "prefix": "prottek",
+      "body": [
+        "prottek ${1:item} erJonno ${1:MyArr} erModdhe {",
+        "    (${lekho(MyArr)})",
+        "}"
+      ],
+      "description": "prottek loop bebohar kore ekti array er shob item read kora somvob"
+    },
     "object class based": {
       "prefix": "object",
       "body": [
@@ -113,6 +122,5 @@
         "}"
       ]
     }
-
   }
 }
